@@ -1,0 +1,24 @@
+
+body {
+    background-color: #f8f9fa;
+}
+
+.container {
+    padding: 20px;
+}
+
+.jumbotron {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.card {
+    margin-top: 20px;
+}
+
+.card-img-top {
+    max-height: 300px;
+    object-fit: cover;
+}

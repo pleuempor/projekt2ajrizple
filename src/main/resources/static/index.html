@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Footwear Classification</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" async></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="display-4">Schuh - Klassifizierung</h1>
+            <p class="lead">Vorlesungsbeispiel von Pleurat Ajrizi</p>
+        </div>
+
+        <form>
+            <div class="form-group">
+                <label for="imageUpload">Bild hochladen (JPEG, PNG)</label>
+                <input type="file" accept="image/png, image/jpeg" class="form-control-file" id="imageUpload"
+                    onchange="checkFiles(this.files);">
+            </div>
+        </form>
+
+        <div id="answerPart" style="visibility: hidden;">
+            <div class="card shadow rounded">
+                <div class="card-body">
+                    <h5 class="card-title">Resultate:</h5>
+                    <div id="answer" class="card-text"></div>
+                </div>
+            </div>
+
+            <div class="card mt-3 shadow rounded" id="previewPart">
+                <div class="card-body">
+                    <h5 class="card-title">Analysiertes Bild:</h5>
+                    <img id="preview" class="img-thumbnail" src="#" alt="preview" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
