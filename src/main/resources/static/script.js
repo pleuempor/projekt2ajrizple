@@ -56,6 +56,6 @@ function formatClassNames(data) {
 }
 
 function formatProbability(probability) {
-    return Math.round(probability * 100) + "%";
+    return (probability * 100).toFixed(2) + "%";
 }
 
